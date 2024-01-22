@@ -1,0 +1,33 @@
+@media screen and (max-width: 1262px) {
+    .projectSection {
+        margin-left: 2%;
+    }
+
+    .skillSection {
+        margin-left: 2%;
+    }
+
+    .contactform {
+        margin-left: 2%;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1263px) {
+    .projectSection{
+        margin-left: 23rem;
+        margin-right: 1rem;
+    }
+    
+    .skillSection{
+        margin-left: 21rem;
+    
+    }
+    
+    .contactform {
+        margin-left: 27px;
+        margin-right: auto;
+        padding-right: 100px;
+    }
+    
+}

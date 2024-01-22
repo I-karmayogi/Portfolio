@@ -1,0 +1,14 @@
+@media (min-width: 768px){
+    .md\:w-auto {
+        width: 78%;
+        height: 12rem 
+    }
+}
+
+
+@media (min-width: 768px){ 
+.md\:ml-5 {
+    margin-left: 21rem;
+    margin-top: 7%;
+}
+}

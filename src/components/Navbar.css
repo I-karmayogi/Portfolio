@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #14131a; /* Set the desired background color for the entire page */
+    transition: none; /* Remove any transitions for the entire page */
+  }
+
+.bg-btnHighlight {
+  background-color: #2bd576;
+  padding-top: auto;
+  width: 1.3rem; /* adjust the size as needed */
+  height: 1.3rem; /* adjust the size as needed */
+  margin-left: -90px;
+  border-radius: 50%; /* make it a circle */
+}
+/* 
+  
+  .align-middle {
+    vertical-align: middle;
+  } */
+  .navButton {
+    position: absolute;
+    right: 4.5%; 
+    height: 45px;
+    width: auto;
+    background-color: #2bd576;
+  }
+  
+
+
+  
+  
+  
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #14131a; /* Set the background color for the header */
+    color: #fff; /* Set text color for the header */
+    z-index: 10;
+  }
+  
+  .header a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .header .navContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    max-width: 1230px;
+    min-height: 80px;
+    margin: 0px auto;
+  }
+  
+  .logo {
+    font-size: 1.25em;
+    padding: 0.95em 0;
+  }
+  
+  .navToggle {
+    display: block;
+    background-color: transparent;
+    border: none;
+    height: 38px;
+    width: 38px;
+    padding: 8px 8px;
+    margin: 10px -8px 10px 0px;
+    outline: none;
+    cursor: pointer;
+    z-index: 5;
+  }
+  
+  .navToggle.open span:first-child {
+    transform: rotate(45deg) translate(4.4px, 4.4px);
+  }
+  
+  .navToggle.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  .navToggle.open span:last-child {
+    transform: rotate(-45deg) translate(4.4px, -4.4px);
+  }
+  
+  .navToggle span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .navToggle.open span {
+    background: white;
+  }
+  
+  .navToggle span:last-child {
+    margin-bottom: 0;
+  }
+  
+  .wrapper {
+    z-index: 0;
+    position: fixed;
+    height: 100vh;
+    background-color: #14131a; /* Set the desired color for the side navbar */
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .mainNav {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    width: 300px;
+    height: 87vh;
+    z-index: 15;
+    background-color: #1c1b23; /* Set the same color as the wrapper */
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: darkgrey;
+    padding: 50px 15px;
+    transform: translateX(-100%);
+    overflow-y: auto;
+  }
+  
+  .mainNav.open {
+    transform: translateX(0%);
+  }
+  
+  .mainNav .mainNavLink {
+    display: block;
+    padding: 0.71875rem 0;
+    text-transform: capitalize;
+  }
+  
+  .overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  
+  .overlay.open {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+  #style-2::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color:#1c1b23;
+  }
+  
+  #style-2::-webkit-scrollbar {
+    width: 12px;
+    background-color: #1c1b23;
+  }
+  
+  #style-2::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: black;
+  }
+  
+
+
+
+
+  @media (min-width: 769px) {
+    .navToggle {
+      display: none;
+    }
+
+    
+  }
+
+  @media (max-width: 769px){
+    .mainNav {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 300px;
+      height: 100vh;
+      background-color: #1c1b23; /* Set the same color as the wrapper */
+      font-size: .875rem;
+      line-height: 1.25rem;
+      color: darkgrey;
+      padding: 50px 15px;
+      z-index: 3;
+      transform: translateX(-100%);
+    }
+  }
